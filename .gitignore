@@ -1,2 +1,5 @@
 .*
 !.gitignore
+Scripts/
+Lib/
+pyvenv.cfg
