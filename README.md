@@ -35,3 +35,7 @@ python app.py
 ```
 
 Open a web browser and go to http://127.0.0.1:5000/.
+
+## Live Demo
+
+Visit the live demo [here](https://sentiment-analysis-eu7c.onrender.com/).
