@@ -14,8 +14,10 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    global initial_text
     if request.method == 'POST':
         text = request.form['news']
+        initial_text = text
         sentiment_result = applyModel(preprocess_text(text))
         return render_template('result.html', text=text, sentiment=sentiment_result)
 
