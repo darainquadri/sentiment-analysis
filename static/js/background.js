@@ -3,7 +3,7 @@
 const canvas = document.getElementById('cnv');
 const ctx = canvas.getContext('2d');
 
-let particle_properties = { 'color': '#575757', 'line_color': '#e0e0e0' };
+let particle_properties = { 'color': '#c1ded1', 'line_color': '#dff2ea' };
 let particles = [];
 let animationId;
 

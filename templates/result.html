@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
     <meta name="description" content="Sentiment Analysis using Python">
     <meta name="keywords" content="Sentiment Analysis, Python, NLTK, Web App">
     <meta name="author" content="Syed Darain Quadri">
-    <title>Sentiment Analyser</title>
+    <title>Result</title>
 </head>
 <body>
     <section>
         <canvas id="cnv"></canvas>
-        <form method="post">
-            <div class="label">Enter news description:</div>
-            <textarea name="news" id="news">{{ text }}</textarea>
-            <div><button type="submit" role="button">Submit</button></div>
-        </form>
+        <h1>Sentiment Analysis Result</h1>
+        <p>Input text: {{ text }}</p>
+        <p>Sentiment: <span class="{{ sentiment }}">{{ sentiment }}</span></p>
+        <a id="back" href="/">Go back</a>
         <footer>
             <div>
                 <a href="https://github.com/darainquadri/sentiment-analysis" target="_blank" rel="noopener noreferrer">Sentiment Analysis Github</a>
